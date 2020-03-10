@@ -28,7 +28,7 @@
 
   <main class="flex-grow">
 
-    <div class="bg-cover h-56 sm:h-48 md:h-48 lg:h-48 xl:h-48" style="background-image: url('/images/logo.jpeg');">
+    <div class="bg-cover h-56 sm:h-48 md:h-48 lg:h-48 xl:h-48" style="background-image: url('./images/logo.jpeg');">
     </div>
 
     <div class="container mx-auto max-w-lg px-4 my-4" x-data="todos()" x-init="init()">
@@ -53,7 +53,7 @@
                 <input type="checkbox" x-model="todo.isComplete" :change="updateLocalStorage()">
                 <div class="ml-3" x-text="todo.title"></div>
               </div>
-              <img src="images/icon-trash.svg" @click="remove(todo.id)">
+              <img src="./images/icon-trash.svg" @click="remove(todo.id)">
             </li>
           </template>
         </ul>
